@@ -6,7 +6,7 @@ import { feedBack } from '../data/Data'
 const Testimonial = () => {
   return (
     <section className={`min-h-[100vh] bg-white center flex-col gap-10   ${styles.padding}`}>
-    <span className='text-bold text-[32px]'>Testimonials</span>
+    <span className='font-semibold text-blue text-[32px] md:mt-0 mt-10'>Testimonials</span>
     <h1 className={`${styles.title} text-center text-blue`}>Our Clients Reviews</h1>
    
      <div className='flex center gap-10'>

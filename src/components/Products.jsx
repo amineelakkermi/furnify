@@ -48,16 +48,15 @@ const Products = () => {
   return (
     <section id='products' className={`min-h-[100vh] bg-greyBg flex flex-col gap-10 ${styles.padding}`}>
     
-    <h1 className={`text-[48px] text-center font-bold text-blue`}>Best Selling Products</h1>
+    <h1 className={`text-[48px] md:mt-0 mt-10 text-center font-bold text-blue`}>Best Selling Products</h1>
 
     <div className='w-full flex justify-center items-center'>
-    <ul className='bg-greyCategorie md:p-4 p-2 flex-wrap  rounded-[50px] center  md:h-[80px] h-auto gap-[20px]'>
-    <li className='w-[95px] h-[50px] rounded-[50px] hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("chair")}>Chair</a></li>
-    <li className='w-[95px] h-[50px] rounded-[50px] hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("sofa")}>Sofa</a></li>
-    <li className='w-[95px] h-[50px] rounded-[50px] hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("beds")}>Beds</a></li>
-    <li className='w-[95px] h-[50px] rounded-[50px] hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("lamp")}>Lamp</a></li>
-    <li className='w-[95px] h-[50px] rounded-[50px] hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("all")}>All</a></li>
-     
+    <ul className='md:bg-greyCategorie bg-transparent  md:p-4 p-2 flex-wrap  rounded-[50px] center  md:h-[80px] h-auto gap-[20px]'>
+    <li className='w-[95px] h-[50px] md:bg-greyCategorie bg-greyCategorie rounded-[50px]  hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("chair")}>Chair</a></li>
+    <li className='w-[95px] h-[50px] md:bg-greyCategorie bg-greyCategorie rounded-[50px]  hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("sofa")}>Sofa</a></li>
+    <li className='w-[95px] h-[50px] md:bg-greyCategorie bg-greyCategorie rounded-[50px]  hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("beds")}>Beds</a></li>
+    <li className='w-[95px] h-[50px] md:bg-greyCategorie bg-greyCategorie rounded-[50px]  hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("lamp")}>Lamp</a></li>
+    <li className='w-[95px] h-[50px] md:bg-greyCategorie bg-greyCategorie rounded-[50px]  hover:bg-greyCategorieHover center'><a  className='text-blue text-[18px] font-medium' onClick={() => filterItems("all")}>All</a></li>
      </ul> 
     </div>
 
@@ -67,7 +66,7 @@ const Products = () => {
       menuItems.map((item , index) => (
         <div key={index} className='flex flex-col md:w-[250px] w-[100%] gap-0 md:mt-0 mt-10'>
       {/* img div */}
-      <div className='relative bg-[#F5F4F4] bg-[#E4E4E4] justify-start items-start md:w-[250px] w-[100%] h-[220px]'>
+      <div className='relative bg-greyCategorie justify-start items-start md:w-[250px] w-[100%] md:h-[220px] h-[300px]'>
       <img src={item.product_img} alt={item.product_img} className='absolute md:bottom-[15%] bottom-[0%] w-[100%] h-[100%]' />
       </div>
  

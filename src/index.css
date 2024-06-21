@@ -16,6 +16,43 @@
 
 }
 
+/* Style global de la barre de défilement */
+::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre de défilement */
+  height: 12px; /* Hauteur de la barre de défilement horizontale */
+}
+
+/* Style de la glissière (la partie que l'utilisateur fait glisser) */
+::-webkit-scrollbar-thumb {
+  background: #AB6F0E; /* Couleur de la glissière */
+  border-radius: 6px; /* Bordure arrondie de la glissière */
+}
+
+/* Style de la glissière au survol */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Couleur de la glissière au survol */
+}
+
+/* Style de la piste (le fond de la barre de défilement) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de la piste */
+  border-radius: 6px; /* Bordure arrondie de la piste */
+  margin: 4px; /* Marge à l'intérieur de la piste */
+}
+
+/* Style de la piste au survol */
+::-webkit-scrollbar-track:hover {
+  background: #e1e1e1; /* Couleur de la piste au survol */
+}
+
+/* Style de la zone de coin (intersection des barres de défilement verticale et horizontale) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Couleur de la zone de coin */
+}
+
+
+
+
 img{
   object-fit: cover;
 }
